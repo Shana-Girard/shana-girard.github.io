@@ -179,17 +179,21 @@ body, html {
         <a href="mailto:shana.girard07@gmail.com"><i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i></a> Email: shana.girard07@gmail.com<br>
       </div>
       <p>Swing by for a cup of coffee, or leave me a note:</p>
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-        </div>
-      </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND</button>
+      
+        <form action="mailto:shana.girard07@gmal.com" method="post" enctype="text/plain">  
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">           
+                <input class="w3-input w3-border w3-hover-light-grey" type="text" name="name" placeholder="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border w3-hover-light-grey" type="text" name="mail" placeholder="Email">
+              </div>
+          </div>
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" name="comment" placeholder="Comment">
+          <input type="submit" button class="w3-btn w3-section w3-right">SEND</button>
+        </form>
     </div>
+        
   </div>
 </div>
 
